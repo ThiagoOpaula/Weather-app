@@ -19,6 +19,6 @@ export class WeatherService {
   }
 
   updateWeather():Observable<Location> {
-    return this.http.get<Location>(`${this.weatherUrl}${this.apiKey}${Location}`);
+    return this.http.get<Location>(`${this.weatherUrl}${this.apiKey}${this.query}${Location}`);
   }
 }
